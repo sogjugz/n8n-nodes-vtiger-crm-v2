@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-vtiger-crm-v2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n community node for VTiger CRM 6.x webservice REST API — successor of n8n-nodes-vtiger-crm with dynamic fields, query builder and inventory line items",
   "keywords": [
     "n8n",
