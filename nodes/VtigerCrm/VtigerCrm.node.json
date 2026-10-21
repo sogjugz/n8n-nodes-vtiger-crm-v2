@@ -1,0 +1,10 @@
+{
+	"node": "n8n-nodes-vtiger-crm-v2.vtigerCrm",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Sales"],
+	"resources": {
+		"credentialDocumentation": "https://community.vtiger.com/help/vtigercrm/developers/third-party-app-integration.html",
+		"primaryDocumentation": "https://community.vtiger.com/help/vtigercrm/developers/third-party-app-integration.html"
+	}
+}

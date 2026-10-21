@@ -1,0 +1,58 @@
+{
+  "name": "n8n-nodes-vtiger-crm-v2",
+  "version": "0.1.0",
+  "description": "n8n community node for VTiger CRM 6.x webservice REST API — successor of n8n-nodes-vtiger-crm with dynamic fields, query builder and inventory line items",
+  "keywords": [
+    "n8n",
+    "n8n-community-node-package",
+    "vtiger",
+    "vtiger-crm",
+    "crm"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sogjugz/n8n-nodes-vtiger-crm-v2",
+  "author": {
+    "name": "jamerguzman",
+    "email": "jamerguzman@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sogjugz/n8n-nodes-vtiger-crm-v2.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "format": "prettier nodes credentials --write",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/VtigerCrmApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/VtigerCrm/VtigerCrm.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.52.5",
+    "@types/node": "^26.6.5",
+    "n8n-workflow": "^2.16.0",
+    "prettier": "^3.9.10",
+    "typescript": "5.9"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "allowScripts": {
+    "isolated-vm@7.0.1": true,
+    "isolated-vm@6.2.0": true
+  }
+}
