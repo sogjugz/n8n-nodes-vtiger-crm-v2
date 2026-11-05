@@ -212,9 +212,9 @@ export async function vtigerDescribe(
 export async function getRecordWebserviceId(
 	context: VtigerFunctionsContext,
 	module: string,
-	recordId: string,
+	recordId: string | number,
 ): Promise<string> {
-	const trimmed = recordId.trim();
+	const trimmed = String(recordId).trim();
 	if (/^\d+x\d+$/.test(trimmed)) return trimmed;
 	const describe = await vtigerDescribe(context, module);
 	return `${describe.idPrefix}x${trimmed}`;
